@@ -8,3 +8,6 @@
 [link to our site](https:://google.com)
 
 **OUR GOALS**
+* create design
+* create website
+* pulish website
