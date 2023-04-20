@@ -6,3 +6,48 @@
 a {
   color: inherit;
 }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  /* background-color: red; */
+  padding: 0 10px;
+}
+
+.blocks-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blocks-block {
+  width: calc(100% / 3 - 15px);
+  font-size: 50px;
+  background-color: yellow;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blocks-block:nth-child(1),
+.blocks-block:nth-child(2),
+.blocks-block:nth-child(3) {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .blocks-block {
+    width: calc(100% / 2 - 15px);
+    font-size: 26px;
+  }
+  .blocks-block:nth-child(4) {
+    margin-bottom: 15px;
+  }
+}
+
+@media (orientation: portrait) {
+  .container {
+    background-color: red;
+  }
+}
