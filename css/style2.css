@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0; */
+  padding: 0;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: rgba(15, 39, 48, 1);
+  color: #fff;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.first, .second, .final {
+  overflow: hidden;
+}
+
+.first {
+  /* display: none; */
+}
+
+.start {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  background-color: #fff;
+  background-color: rgba(1, 71, 81, 1);
+}
+
+.start-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100vh;
+}
+
+.start-top {
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start-logo {
+  position: relative;
+}
+
+.start-logo span {
+  position: absolute;
+}
+
+.start-logo span:nth-child(1) {
+
+}
+.start-logo span:nth-child(1) {
+
+}
+.start-logo span:nth-child(1) {
+
+}
+
+.start-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-title::after {
+  content: "";
+  position: absolute;
+  height: 110px;
+  width: 100%;
+  background-color: rgba(1, 71, 81, 1);
+  left: 0;
+  z-index: -1;
+}
+
+.start-btn {
+  cursor: pointer;
+}
+
+/* background: url() center / cover no-repeat */
+
+
+.second {
+  min-height: 100vh;
+  display: flex;
+  display: none;
+}
+
+.left {
+  width: 20%;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+}
+
+.memory {
+  width: 70%;
+}
+
+.memory-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.memory-card {
+  width: calc((100% - 10px * 4) / 4);
+  background-color: #fff;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  overflow: hidden;
+}
+
+.memory-card span {
+  opacity: 0;
+}
+
+.memory-card img {
+  opacity: 0;
+}
+
+.memory-card.active img {
+  opacity: 1;
+  object-fit: cover;
+}
+
+.card-1.active {
+    background: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg") 50% / cover no-repeat;
+}
+.memory-card:not(:nth-child(-4)) {
+  margin-bottom: 10px;
+}
+
+
+.final {
+  min-height: 100vh;
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
